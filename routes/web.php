@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'crm', 'namespace'=> 'Crm'], function () {
+    Route::get('/project/log', ['uses' => 'ProjectLogController@index']);
+});
