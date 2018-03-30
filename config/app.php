@@ -177,6 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class, # 开启laravel debuger
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -228,6 +229,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class, # 开启laravel debuger
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
     ],
 
 ];

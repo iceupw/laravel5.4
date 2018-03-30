@@ -38,3 +38,13 @@ location / {
     #.gitattributes文件 删除
     * text=auto
 ```
+---
+##### maatwebsite/excel
+```
+# app.conf
+Maatwebsite\Excel\ExcelServiceProvider::class,
+'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+php artisan vendor:publish
+
+# 演示php artisan export:example
+```
