@@ -1,5 +1,6 @@
 ##### composer
 ```
+#composer json
 "predis/predis": "~1.0",
 "php-amqplib/php-amqplib": "2.6.2",
 "phpoffice/phpexcel": "^1.8",
@@ -7,8 +8,10 @@
 
 "phpspec/phpspec": "~2.1",
 "barryvdh/laravel-debugbar": "^2.4"
-```
 
+#执行
+composer uodate
+```
 ---
 ##### laravel debug
 ```
@@ -16,4 +19,22 @@
 Barryvdh\Debugbar\ServiceProvider::class, # 开启laravel debuger
 'Debugbar' => Barryvdh\Debugbar\Facade::class, # 开启laravel debuger
 php artisan vendor:publish
+```
+---
+##### nginx配置
+```
+location / {
+            try_files $uri $uri/ /index.php?$query_string;
+
+            index  index.html index.htm index.php;
+            #autoindex  on;
+        }
+```
+---
+#####  GIT WARNING:  LF TO CTLR FOR WINDOWS
+```
+    git config --global core.autocrlf false
+    
+    #.gitattributes文件 删除
+    * text=auto
 ```
