@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'crm', 'namespace'=> 'Crm'], function () {
     Route::get('/project/log', ['uses' => 'ProjectLogController@index']);
 });
+
+Route::group(['prefix' => 'base', 'namespace'=> 'Base'], function () {
+    Route::get('/fileupload', ['uses' => 'FileUploadController@index']);
+});
