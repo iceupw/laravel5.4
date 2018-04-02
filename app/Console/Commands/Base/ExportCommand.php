@@ -3,6 +3,7 @@
 namespace App\Console\Commands\Base;
 
 use Illuminate\Console\Command;
+use Excel;
 
 class ExportCommand extends Command
 {
@@ -62,6 +63,6 @@ class ExportCommand extends Command
             $excel->sheet('score', function($sheet) use ($cellData){
                 $sheet->rows($cellData);
             });
-        })->export('xls');
+        })->store('xls');
     }
 }

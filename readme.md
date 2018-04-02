@@ -48,3 +48,8 @@ php artisan vendor:publish
 
 # 演示php artisan export:example
 ```
+##### 新增Inc服务
+```
+# example
+php artisan inc_read
+```

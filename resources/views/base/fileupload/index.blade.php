@@ -9,9 +9,9 @@
             <h3 class="pull-left">Uploads </h3>
             <div class="pull-left">
                 <ul class="breadcrumb">
-@foreach ($breadcrumbs as $path => $disp)
+                    @foreach ($breadcrumbs as $path => $disp)
                     <li><a href="/admin/upload?folder={{ $path }}">{{ $disp }}</a></li>
-@endforeach
+                    @endforeach
                     <li class="active">{{ $folderName }}</li>
                 </ul>
             </div>
