@@ -22,3 +22,7 @@ Route::group(['prefix' => 'crm', 'namespace'=> 'Crm'], function () {
 Route::group(['prefix' => 'base', 'namespace'=> 'Base'], function () {
     Route::get('/fileupload', ['uses' => 'FileUploadController@index']);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
