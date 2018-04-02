@@ -657,6 +657,13 @@ class ProjectLogController extends Controller
         dd($projectLog);
     }
 
+    public function update(){
+        $info = $this->ledgerModel
+            ->leftJoin('jz_ledger as l','jz_project_base.contract_no', 'ON','l.ledger_no')
+            ->whereIn('jz_project_base.create_at',['1522140629','1522140629'])->get(['l.receive_user_id','jz_project_base.contract_no']);
+        dd($info);
+
+    }
 
     /**
      * sql语句变更领用者id

@@ -18,4 +18,5 @@ Route::get('/', function () {
 Route::group(['prefix' => 'crm', 'namespace'=> 'Crm'], function () {
     Route::get('/project/log', ['uses' => 'ProjectLogController@index']);
     Route::get('/project/info', ['uses' => 'ProjectLogController@info']);
+    Route::get('/project/update', ['uses' => 'ProjectLogController@update']);
 });
