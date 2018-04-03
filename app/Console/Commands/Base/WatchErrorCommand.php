@@ -77,7 +77,6 @@ class WatchErrorCommand extends Command
                 }
             }
         }
-        dd($msg);
         if(!empty($msg)) {
             if(mb_strlen($msg)>1000000){
                 $msg = mb_substr($msg, 0, 1000000). '......';
