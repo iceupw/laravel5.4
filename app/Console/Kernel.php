@@ -18,7 +18,9 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\Base\IncCommand::class,
         \App\Console\Commands\Base\ExportCommand::class,
         \App\Console\Commands\Base\WatchErrorCommand::class,
-        \App\Console\Commands\Base\SendEmailCommand::class
+        \App\Console\Commands\Base\SendEmailCommand::class,
+        \App\Console\Commands\Base\RabbitmqSet::class,
+        \App\Console\Commands\Base\RabbitmqGet::class,
     ];
 
     /**
