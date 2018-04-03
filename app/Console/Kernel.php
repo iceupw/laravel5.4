@@ -4,6 +4,7 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\Mail;
 
 class Kernel extends ConsoleKernel
 {
@@ -16,6 +17,8 @@ class Kernel extends ConsoleKernel
         //
         \App\Console\Commands\Base\IncCommand::class,
         \App\Console\Commands\Base\ExportCommand::class,
+        \App\Console\Commands\Base\WatchErrorCommand::class,
+        \App\Console\Commands\Base\SendEmailCommand::class
     ];
 
     /**
