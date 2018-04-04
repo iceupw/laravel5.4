@@ -5,14 +5,14 @@ namespace App\Console\Commands\Base;
 use App\Services\IncService;
 use Illuminate\Console\Command;
 
-class IncCommand extends Command
+class FunctionCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'inc_read';
+    protected $signature = 'function {name=example}';
 
     /**
      * The console command description.
@@ -39,11 +39,20 @@ class IncCommand extends Command
     public function handle()
     {
         //
-        $content = IncService::get('Base.Test.name');
-        $this->info($content);
+        $name = $this->argument('name');
+
+        switch ($name){
+            case 'with':
+                $res = $this->with();
+                break;
+            default :
+                $res = '不存在';
+        }
+        $this->info($res);
     }
 
-    public static function test(){
-        return 1;
+    public function with(){
+        $value = with(new IncService)->test();
+        return $value;
     }
 }
