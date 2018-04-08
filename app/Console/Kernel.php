@@ -23,6 +23,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\Base\RabbitmqGet::class,
         \App\Console\Commands\Base\LanguageCommand::class,
         \App\Console\Commands\Base\FunctionCommand::class,
+        \App\Console\Commands\LaowuCommand::class
 
     ];
 

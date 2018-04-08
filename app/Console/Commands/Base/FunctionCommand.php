@@ -45,6 +45,20 @@ class FunctionCommand extends Command
             case 'with':
                 $res = $this->with();
                 break;
+            case 'view':
+                $res = view('welcome');
+                break;
+            case 'value':
+                $res = value(function(){
+                    return '刘瑞杰';
+                });
+                break;
+            case 'session':
+                session()->put('test1',111111111);
+                $res = session('test1');
+                break;
+            case 'retry':
+                break;
             default :
                 $res = '不存在';
         }
