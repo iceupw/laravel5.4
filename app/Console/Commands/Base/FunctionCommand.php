@@ -42,6 +42,35 @@ class FunctionCommand extends Command
         $name = $this->argument('name');
 
         switch ($name){
+            case 'action':
+                $res = action('HomeController@index');
+                break;
+            case  'asset':
+                $res = asset('1');
+                break;
+            case 'route':
+                $res = route('welcome');
+                break;
+            case 'url':
+                $res = secure_url('welcome');
+                break;
+            case 'abort':
+                abort(401);
+                break;
+            case 'factory':
+                //$user = factory(App\User::class)->make();
+                break;
+            case 'info':
+                $res = info('this is a info');
+                break;
+            case 'logger':
+                $res = logger('logger test');
+                logger()->error('this is a debuger no parament');
+                logger('this a parament',['id'=>'111111111']);
+                break;
+            case 'method_filed':
+                $res = method_field('DELETE');
+                break;
             case 'with':
                 $res = $this->with();
                 break;
@@ -58,6 +87,21 @@ class FunctionCommand extends Command
                 $res = session('test1');
                 break;
             case 'retry':
+                $res = retry(5,function(){
+                    echo 1;
+                });
+                break;
+            case 'response':
+                $res = response('Hello World', 200);
+                break;
+            case 'request':
+                $res = request('key', '111111');
+                break;
+            case 'redirect':
+                $res = redirect('/home');
+                break;
+            case 'old':
+                $res = old('key1','value');
                 break;
             default :
                 $res = '不存在';
