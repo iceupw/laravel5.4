@@ -19,7 +19,13 @@ class ProjectLogController extends Controller
 
     public function index()
     {
-        $projectLog = $this->projectLogModel->where('id', 32)->pluck('create_at')->toArray();
-        dd($projectLog);
+        $projectLog = $this->projectLogModel->where('id','>',31);
+        $id = 1;
+        $projectLog->where(function ($projectLog) use ($id) {
+            $projectLog->where('id','32');
+            $projectLog->orWhere('id','33');
+        });
+        $res = $projectLog->pluck('create_at')->toArray();
+        var_dump($res);
     }
 }
