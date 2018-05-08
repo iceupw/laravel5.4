@@ -20,6 +20,6 @@ class ProjectLogController extends Controller
     public function index()
     {
         $projectLog = $this->projectLogModel->where('id', 32)->pluck('create_at')->toArray();
-        dd($projectLog);
+        return view('welcome');
     }
 }
