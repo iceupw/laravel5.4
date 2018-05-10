@@ -53,3 +53,4 @@ php artisan vendor:publish
 # example
 php artisan inc_read
 ```
+##### 新增图片处理服务 Intervention Image
