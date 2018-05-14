@@ -12,8 +12,8 @@ class ComposerStaticInit74e4cbe8b52d8d17c3fb8617e83781d2
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
@@ -297,6 +297,7 @@ class ComposerStaticInit74e4cbe8b52d8d17c3fb8617e83781d2
         'Intervention\\Image\\' => 
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
+            1 => __DIR__ . '/..' . '/intervention/imagecache/src/Intervention/Image',
         ),
         'Illuminate\\' => 
         array (
@@ -435,6 +436,7 @@ class ComposerStaticInit74e4cbe8b52d8d17c3fb8617e83781d2
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Base\\FileUploadController' => __DIR__ . '/../..' . '/app/Http/Controllers/Base/FileUploadController.php',
+        'App\\Http\\Controllers\\Base\\ImageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Base/ImageController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Crm\\ProjectLogController' => __DIR__ . '/../..' . '/app/Http/Controllers/Crm/ProjectLogController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
@@ -1898,6 +1900,7 @@ class ComposerStaticInit74e4cbe8b52d8d17c3fb8617e83781d2
         'Intervention\\Image\\AbstractEncoder' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/AbstractEncoder.php',
         'Intervention\\Image\\AbstractFont' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/AbstractFont.php',
         'Intervention\\Image\\AbstractShape' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/AbstractShape.php',
+        'Intervention\\Image\\CachedImage' => __DIR__ . '/..' . '/intervention/imagecache/src/Intervention/Image/CachedImage.php',
         'Intervention\\Image\\Commands\\AbstractCommand' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Commands/AbstractCommand.php',
         'Intervention\\Image\\Commands\\Argument' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Commands/Argument.php',
         'Intervention\\Image\\Commands\\ChecksumCommand' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php',
@@ -1967,6 +1970,8 @@ class ComposerStaticInit74e4cbe8b52d8d17c3fb8617e83781d2
         'Intervention\\Image\\Gd\\Shapes\\PolygonShape' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Gd/Shapes/PolygonShape.php',
         'Intervention\\Image\\Gd\\Shapes\\RectangleShape' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Gd/Shapes/RectangleShape.php',
         'Intervention\\Image\\Image' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Image.php',
+        'Intervention\\Image\\ImageCache' => __DIR__ . '/..' . '/intervention/imagecache/src/Intervention/Image/ImageCache.php',
+        'Intervention\\Image\\ImageCacheController' => __DIR__ . '/..' . '/intervention/imagecache/src/Intervention/Image/ImageCacheController.php',
         'Intervention\\Image\\ImageManager' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/ImageManager.php',
         'Intervention\\Image\\ImageManagerStatic' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/ImageManagerStatic.php',
         'Intervention\\Image\\ImageServiceProvider' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/ImageServiceProvider.php',
@@ -2018,6 +2023,9 @@ class ComposerStaticInit74e4cbe8b52d8d17c3fb8617e83781d2
         'Intervention\\Image\\Point' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Point.php',
         'Intervention\\Image\\Response' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Response.php',
         'Intervention\\Image\\Size' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Size.php',
+        'Intervention\\Image\\Templates\\Large' => __DIR__ . '/..' . '/intervention/imagecache/src/Intervention/Image/Templates/Large.php',
+        'Intervention\\Image\\Templates\\Medium' => __DIR__ . '/..' . '/intervention/imagecache/src/Intervention/Image/Templates/Medium.php',
+        'Intervention\\Image\\Templates\\Small' => __DIR__ . '/..' . '/intervention/imagecache/src/Intervention/Image/Templates/Small.php',
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',

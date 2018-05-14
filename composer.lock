@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9c2bb5cb1b8a1493b0b64e309df0800",
+    "content-hash": "3b98d31ced4214d8468e482e73ffc236",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -511,6 +511,59 @@
                 "watermark"
             ],
             "time": "2017-09-21T16:29:17+00:00"
+        },
+        {
+            "name": "intervention/imagecache",
+            "version": "2.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/imagecache.git",
+                "reference": "7936b90e695daee1aafbd25221815352ef97bcbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/Intervention/imagecache/7936b90e695daee1aafbd25221815352ef97bcbc.zip",
+                "reference": "7936b90e695daee1aafbd25221815352ef97bcbc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "~4|~5",
+                "illuminate/filesystem": "~4|~5",
+                "intervention/image": "dev-master|~2,>=2.2.0",
+                "jeremeamia/superclosure": "~1|~2",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.net",
+                    "homepage": "http://olivervogel.net/"
+                }
+            ],
+            "description": "Caching extension for the Intervention Image Class",
+            "homepage": "http://image.intervention.io",
+            "keywords": [
+                "cache",
+                "gd",
+                "image",
+                "imagick",
+                "laravel"
+            ],
+            "time": "2015-09-22T15:22:47+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
