@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    //return view('welcome');
+    return view('welcome');
 })->name('welcome');
 
 Route::group(['prefix' => 'crm', 'namespace'=> 'Crm'], function () {
@@ -23,6 +23,8 @@ Route::group(['prefix' => 'base', 'namespace'=> 'Base'], function () {
     Route::get('/fileupload', ['uses' => 'FileUploadController@index']);
     Route::get('/image/example', ['uses' => 'ImageController@example']);
     Route::get('/image/colorformats', ['uses' => 'ImageController@colorFormats']);
+    Route::get('/db', ['uses' => 'DbController@index']);
+    Route::get('/db/ext1', ['uses' => 'DbController@view']);
 });
 
 Auth::routes();
