@@ -55,3 +55,4 @@ php artisan inc_read
 ```
 ##### 新增图片处理服务 Intervention Image
 ##### DB快速入门
+##### 新增微信公众号开发
