@@ -30,3 +30,5 @@ Route::group(['prefix' => 'base', 'namespace'=> 'Base'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::any('/wechat', 'WeChatController@serve');
