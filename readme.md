@@ -53,3 +53,8 @@ php artisan vendor:publish
 # example
 php artisan inc_read
 ```
+
+##### laravel5.4事务嵌套验证结果
+```
+运行事务嵌套
+```
