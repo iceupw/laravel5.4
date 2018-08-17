@@ -54,7 +54,6 @@ class DbTransactionCommand extends Command
 
             // 调用错误 服务事务回滚
             $appsModel = app('App\Models\Base\AppsModel');
-            $appsModel->where('id', 2)->update(['title' => '回收站1','xxxx' => '1111']);
         }catch (\Exception $exp){
             DB::rollback();
             dd($exp->getMessage());

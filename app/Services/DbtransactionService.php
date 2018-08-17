@@ -16,9 +16,10 @@ class DbtransactionService
 {
 
     public function test(){
-        DB::beginTransaction();
+        //DB::beginTransaction();
         $appsModel = app('App\Models\Base\AppsModel');
         $appsModel->where('id', 1)->update(['title' => '我的电脑1']);
+        $appsModel->where('id', 2)->update(['title' => '回收站1','xxxx' => '1111']);
         DB::commit();
     }
 
