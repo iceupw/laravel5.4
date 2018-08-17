@@ -24,7 +24,10 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\Base\LanguageCommand::class,
         \App\Console\Commands\Base\FunctionCommand::class,
         \App\Console\Commands\LaowuCommand::class,
-        \App\Console\Commands\Crm\DbTransactionCommand::class
+        \App\Console\Commands\Crm\DbTransactionCommand::class,
+        \App\Console\Commands\Base\CollectCommand::class,
+        \App\Console\Commands\Base\RedisPublishCommand::class,
+        \App\Console\Commands\Base\RedisSubCribeCommand::class,
 
     ];
 
