@@ -24,10 +24,11 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\Base\LanguageCommand::class,
         \App\Console\Commands\Base\FunctionCommand::class,
         \App\Console\Commands\LaowuCommand::class,
-        \App\Console\Commands\Crm\DbTransactionCommand::class,
-        \App\Console\Commands\Base\CollectCommand::class,
-        \App\Console\Commands\Base\RedisPublishCommand::class,
-        \App\Console\Commands\Base\RedisSubCribeCommand::class,
+        \App\Console\Commands\Crm\DbTransactionCommand::class, //
+        \App\Console\Commands\Base\CollectCommand::class, //laravel集合
+        \App\Console\Commands\Base\RedisPublishCommand::class, // redis发布
+        \App\Console\Commands\Base\RedisSubCribeCommand::class, // 缓存订阅
+        \App\Console\Commands\Base\AutoCommand::class, // 自动执行任务
 
     ];
 
@@ -39,8 +40,14 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        //$storagePath = storage_path();
         // $schedule->command('inspire')
         //          ->hourly();
+        //$schedule->command('auto_command')
+        //    ->everyMinute()
+        //    ->withoutOverlapping()
+        //    ->sendOutputTo($storagePath.'/logs/laravel.log')
+        //    ->emailOutputTo('liuruijie@doumi.com');
     }
 
     /**

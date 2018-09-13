@@ -42,7 +42,7 @@ class RabbitmqClient{
     }
     public function connection($durable=false){
         $this->connection = new AMQPStreamConnection($this->arrCurrentConf['host'], $this->arrCurrentConf['port'],
-            $this->arrCurrentConf['user'], $this->arrCurrentConf['pass'], $this->arrCurrentConf['vhost']);
+        $this->arrCurrentConf['user'], $this->arrCurrentConf['pass'], $this->arrCurrentConf['vhost']);
         $this->channel = $this->connection->channel();
         $this->channel->exchange_declare($this->exchange, 'fanout', false, $durable, false);
     }

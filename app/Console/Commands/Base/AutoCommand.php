@@ -3,16 +3,16 @@
 namespace App\Console\Commands\Base;
 
 use Illuminate\Console\Command;
-use App\Base\Queue\Rabbitmq\RabbitmqClient;
+use Illuminate\Support\Facades\Log;
 
-class RabbitmqSet extends Command
+class AutoCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'rabbitmq_set';
+    protected $signature = 'auto_command';
 
     /**
      * The console command description.
@@ -39,10 +39,6 @@ class RabbitmqSet extends Command
     public function handle()
     {
         //
-        $rabbitmq = new RabbitmqClient('test');
-        echo 'producter ready:';
-        $arr = ['team_id'=>1 ,'project_id'=>1, 'confirm_id'=>1];
-        //$arr = ['team_id'=>1 ,'project_id'=>1, 'confirm_id'=>1];
-        dd($rabbitmq->addOne($arr));
+        Log::info('刘瑞杰测试');
     }
 }

@@ -4,6 +4,7 @@ namespace App\Console\Commands\Base;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
+use App\Services\IncService;
 
 class SendEmailCommand extends Command
 {
@@ -40,9 +41,14 @@ class SendEmailCommand extends Command
     {
         //
         $name = '测试';
-        $flag = Mail::send('welcome',['name'=>$name],function($message){
-            $to = '582161766@qq.com';
-            $message ->to($to)->subject('测试邮件');
+        //$flag = Mail::send('welcome',['name'=>$name],function($message){
+        //    $to = 'tianmeijun@doumi.com';
+        //    $html = IncService::get('Base.Html.html');
+        //    $message ->to($to)->subject($html);
+        //});
+        $flag = Mail::send('html',['name'=>$name],function($message){
+            $to = 'liuruijie@doumi.com';
+            $message ->to($to)->subject('测试');
         });
         if($flag){
             $this->info('发送邮件成功，请查收！');
