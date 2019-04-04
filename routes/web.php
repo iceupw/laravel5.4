@@ -25,6 +25,10 @@ Route::group(['prefix' => 'base', 'namespace'=> 'Base'], function () {
     Route::get('/image/colorformats', ['uses' => 'ImageController@colorFormats']);
 });
 
+Route::group(['prefix' => 'rouchi', 'namespace'=> 'Rouchi'], function () {
+    Route::get('/index', ['uses' => 'TestController@index']);
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
