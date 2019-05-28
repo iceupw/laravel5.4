@@ -179,7 +179,8 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class, # 开启laravel debuger
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class
+        Intervention\Image\ImageServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class
 
     ],
 
@@ -231,7 +232,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class, # 开启laravel debuger
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
-        'Image' => Intervention\Image\Facades\Image::class
+        'Image' => Intervention\Image\Facades\Image::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class
 
     ],
 

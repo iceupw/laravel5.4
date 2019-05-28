@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    //return view('welcome');
+    return view('welcome');
 })->name('welcome');
 
 Route::group(['prefix' => 'crm', 'namespace'=> 'Crm'], function () {
