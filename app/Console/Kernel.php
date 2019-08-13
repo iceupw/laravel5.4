@@ -38,10 +38,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('message:rabbit')
-                  ->daily();
-        $schedule->command('message:report')
-            ->fridays();
+//         $schedule->command('message:rabbit')
+//                  ->daily();
+//         $schedule->command('message:report')
+//            ->fridays();
+
     }
 
     /**
